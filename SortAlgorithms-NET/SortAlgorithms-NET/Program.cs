@@ -18,6 +18,10 @@ namespace SortAlgorithms_NET
             int[] arrayMerge = Merge<int>.Sort(array);
             Print(arrayMerge);
 
+            Console.Write("Select: ");
+            int[] arraySelect = Select<int>.Sort(array);
+            Print(arraySelect);
+
             Console.ReadLine();
         }
 
