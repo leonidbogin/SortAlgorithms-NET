@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SortAlgorithms_NET
 {
     public static class Bubble<T> where T : IComparable
     {    
-        public static T[] Sort(T[] array)
+        public static T[] Sort(T[] arrayOriginal)
         {
+            T[] array = new T[arrayOriginal.Length];
+            Array.Copy(arrayOriginal, array, arrayOriginal.Length);
             int numberChanges;
             do
             {
