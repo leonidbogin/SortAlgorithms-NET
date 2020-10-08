@@ -6,14 +6,18 @@ namespace SortAlgorithms_NET
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 10, 5, 1, 7, 4, 9, 8, 6, 2, 3 };
             Console.Write("Before: ");
+            int[] array = new int[] { 5, 10, 1, 7, 4, 9, 8, 6, 2, 3 };
             Print(array);
+
+            Console.Write("Bubble: ");
+            int[] arrayBubble = Bubble<int>.Sort(array);
+            Print(arrayBubble);
 
             Console.ReadLine();
         }
 
-        static void Print<T>(T[] array)
+        public static void Print<T>(T[] array)
         {
             if (array.Length > 0)
             {
