@@ -22,6 +22,10 @@ namespace SortAlgorithms_NET
             int[] arraySelect = Select<int>.Sort(array);
             Print(arraySelect);
 
+            Console.Write("Quick: ");
+            int[] arrayQuick = Quick<int>.Sort(array);
+            Print(arrayQuick);
+
             Console.ReadLine();
         }
 
