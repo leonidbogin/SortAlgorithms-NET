@@ -7,12 +7,16 @@ namespace SortAlgorithms_NET
         static void Main(string[] args)
         {
             Console.Write("Before: ");
-            int[] array = new int[] { 5, 10, 1, 7, 4, 9, 8, 6, 2, 3 };
+            int[] array = new int[] { 5, 10, 1, 7, 4, 9, 8, 6, 2, 3, 5};
             Print(array);
 
             Console.Write("Bubble: ");
             int[] arrayBubble = Bubble<int>.Sort(array);
             Print(arrayBubble);
+
+            Console.Write("Merge: ");
+            int[] arrayMerge = Merge<int>.Sort(array);
+            Print(arrayMerge);
 
             Console.ReadLine();
         }
